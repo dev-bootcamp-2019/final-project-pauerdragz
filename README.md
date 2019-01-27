@@ -6,7 +6,7 @@ Project can be accessed here : http://ipfs-uploader.surge.sh/
 
 Description:
 
-This Project is a POE for a platform which enables a user to upload files to IPFS , and check through the app’s database of existing files. The Smart Contracts have been deployed on Ropsten so you will interact with that testnet when accessing the Dapp.
+This Project is a POE for a platform which enables users to sign up , upload files to IPFS and check through the app’s database of files that were previously uploaded by other users. The files are being securely stored through the IPFS service. Currently, the Smart Contracts have been deployed on Ropsten so you will interact with that testnet when accessing the Dapp.
 
 The project will have 1 actor:
 
