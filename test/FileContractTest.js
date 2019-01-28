@@ -1,16 +1,14 @@
 var FileContract = artifacts.require("./FileContract.sol");
-// const utils = require('./helpers/utils')
 
 contract('FileContract', function(accounts) {
     let myUserInstance;
     let owner    = accounts[0];
     let nonOwner = accounts[1];
     const username = "grandfleet"
-    //let tryCatch = require("./helpers/exceptions.js").tryCatch;
-    //let errTypes = require("./helpers/exceptions.js").errTypes;
+    
+    
     beforeEach(async () => {
-        // [accounts[0], accounts[1]], requiredConfirmations, dailyLimit
-
+    
         myFileContractInstance = await FileContract.deployed()
         assert.ok(myFileContractInstance)
     })
@@ -26,9 +24,7 @@ contract('FileContract', function(accounts) {
         }); 
     });
     describe("...Add File", async() => {
-        //console.log('Cool')
-        // https://ethereum.stackexchange.com/questions/23058/how-to-convert-string-to-bytes32-in-web3js
-        // https://stackoverflow.com/questions/46491123/string-parameter-not-automatically-parsing-into-bytes32-when-used-with-form/46491305
+    
         it("......Adding a File Item", async() =>  {
             console.log("      adding File Items")
             const tags = ["blockchain","ENGR001","games","life","anime"]
@@ -37,8 +33,8 @@ contract('FileContract', function(accounts) {
             for (var i = 0; i < ipfsTags.length; i++) {
                 ipfsTags[i] = web3.fromAscii(tags[i])
             }
-            //    console.log(web3..fromAscii(tags[i]))
-            //    console.log(ipfsTags)
+        
+            
             const hash1 = "QmWWQSuPMS6aXCbZKpEjPHPUZN2NjB3YrhJTHsV4X3vb2t"
             const filename1 = web3.fromAscii("test1")
             // convert filenames to hex later 
@@ -68,9 +64,8 @@ contract('FileContract', function(accounts) {
             }
             console.log('The returned tags are: ')
             console.log(returnedTags)
-            // promises can be confusing, but these are awaits, whatever
-            // https://ethereum.stackexchange.com/questions/47881/remove-trailing-zero-from-web3-toascii-conversion
-            // assert.strictEqual(returnedTags[0],"blockchain")
+            
+        
         })
         /*
         it("Getting Data of all todos",async() => {
