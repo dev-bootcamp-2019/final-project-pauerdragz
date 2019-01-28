@@ -276,9 +276,7 @@ class UploadFileIPFS extends Component {
                                 <td className="ethAddress">{this.state.ipfsHash}</td>
                             </tr>
                             <tr>
-                                <td>Ethereum Contract Address</td>
-                                <td> : </td>
-                                <td className="ethAddress">{this.state.ethAddress}</td>
+                                <td>  </td>
                             </tr>
                             <tr>
                                 <td className="ethAddress">Tx # </td>
