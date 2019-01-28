@@ -43,6 +43,7 @@ Initialize Ganache-Cli with a pre-defined blocktime
 
 	truffle compile
 	truffle migrate
+	truffle test
 
 Run the webpack server for front-end hot reloading
 
