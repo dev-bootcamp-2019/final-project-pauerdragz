@@ -1,4 +1,3 @@
-Network Ropsten:
-	Contract Address : 0xf2db2a12bC032cdd7eE97876B9654419f40538F5
-  TxHash:0x11a54cb8ecb9b2431b08b6ef3473d8264b755cc4b5d089566b35a558d2f58c87
-  https://ropsten.etherscan.io/address/0xf2db2a12bC032cdd7eE97876B9654419f40538F5
+I chose to restrict the uploading of files that do not have an filename, since IPFS will convert the filename to it's hash. This is being done by the UI.
+
+The logic of the Project is that you should be able to upload your files to an descentralized service, and should be able to check within what was already uploaded, as it is intended to serve as a public repository which is being stored on the Ethereum Blockchain. Users will have to sign-in through Metamask or other web3-enabled apps.
